@@ -1,0 +1,15 @@
+//2019 Alex Perse - alexperse.com 
+
+func fibonacci(_ n: Int) {
+    var currentNumber = 1
+    var previousNumber = 0
+    var temp = 0
+    for _ in 1...n-1 {
+        temp = currentNumber + previousNumber
+        previousNumber = currentNumber
+        currentNumber = temp
+    }
+    print(temp)
+}
+
+//fibonacci(100)
